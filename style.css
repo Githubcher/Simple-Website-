@@ -1,0 +1,178 @@
+
+
+/* Defaults & resets */
+body {
+	margin:0;
+	padding: 0;
+	font-size:20px;
+	line-height: 26px;
+	font-family: 'Times New Roman', monospace;
+	/* font-family: 'Long Cang', cursive; */
+}
+
+a {
+	text-decoration: none;	
+}
+
+main {
+	padding: 0 20px;
+	margin: auto; /* this to center the element */
+	width: 1000px;
+	max-width: 100%;
+	clear:both;
+}
+
+main > section {
+	width: 70%;
+	max-width: 70%;
+	float:left;
+}
+
+main > aside {
+	width: 30%;
+	max-width: 30%;
+	float:right;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left:20px;
+}
+
+article {	
+	padding-top: 50px;
+	padding-bottom: 20px;	
+	border-bottom: 1px dotted wheat; /* #000000 */ 	
+	border-right:1px solid wheat;
+}
+
+
+/* Banner */
+header > section {
+	width:100%;
+	height:280px;
+	
+	background-image: url(cherry.jpeg);
+	background-position:center;
+}
+
+header > section h1 {
+	width:100%;
+	height: 280px;
+	line-height: 280px;
+	text-align:center;
+	font-size: 70px;
+	color: white;
+	margin: 0;	
+	font-family: 'Broadway BT', cursive;
+}
+
+/* Menu */
+header > nav {
+	width:100%;
+	background: #222222;
+	position: sticky;
+	top:0;
+}
+
+header > nav ul {
+	width:1000px;
+	margin: auto;
+	list-style: none;
+	padding:0;
+	max-width:100%;
+}
+
+header > nav ul li {
+	display: inline-block;
+}
+
+header > nav ul li a {
+	display: inline-block;
+	padding: 15px 30px 15px 30px; /* same value with padding:15px 30px*/
+	color:#ffffff;
+}
+
+header > nav ul li a:hover, header > nav ul li a.current {
+	color:#222222;
+	background-color: #ffffff;
+}
+
+/* About */
+article#about table {
+	width: 100%;
+	margin: auto;
+	vertical-align: top;
+}
+
+article#about img {
+	width: 200px;
+	margin-right: 15px;
+}
+
+/* Skills */
+article#skills table {
+	width: 100%;
+	margin: auto;
+	vertical-align: top;
+	border-collapse: collapse;
+}
+
+article#skills table td, article#skills table th{
+	vertical-align:top;
+	text-align: left;
+	padding: 5px 10px;
+}
+
+article#skills table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* Contact Form*/
+article#contactform label {
+	display:block;
+}
+
+input, textarea {
+	border: 1px  solid #eaeaea;
+	padding: 4px 10px;
+	border-radius: 2px;
+	line-height: 30px;
+	width: 300px;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+textarea {
+	height: 120px;
+}
+
+input[type="checkbox"], input[type="submit"] {
+	width: auto;
+}
+
+/* Aside */ 
+aside ul.social {
+	list-style:none;
+}
+
+aside ul.social li {
+	display:inline-block;
+}
+
+/* Footer */
+footer {
+	background-color:#222222;
+	clear:both;
+}
+
+footer .copyright {
+	margin:auto;
+	width: 1000px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 100%;
+}
+
+footer .copyright p {
+	text-align: center;
+	color: #ffffff;
+}
